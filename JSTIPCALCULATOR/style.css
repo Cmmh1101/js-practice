@@ -1,0 +1,128 @@
+:root{
+    --mainColor:linear-gradient(90deg, rgba(2,30,50,1) 0%, rgba(0,152,250,1) 50%, rgba(0,212,255,1) 100%);
+    --secondColor: #fab400;
+    --thirdColor: #faf6ec;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: var(--mainColor);
+    margin-top: 5%;
+}
+
+.container {
+    height: 100%;
+    width: 400px;
+    background-color: var(--thirdColor);
+    border-radius: 20px;
+}
+
+h1 {
+    background: var(--secondColor);
+    color: var(--thirdColor);
+    padding: 30px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: 900;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 0;
+}
+
+p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+#totalTip {
+    font-size: 2.2rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+#totalTip sup {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.billAmountInput {
+    display: flex;
+    justify-content: center;
+}
+
+.service {
+    display: flex;
+    justify-content: center;
+}
+
+.peopleAmtInput {
+    display: flex;
+    justify-content: center;
+}
+
+.billAmt {
+    padding: 10px;
+}
+
+.billAmt:focus {
+    border: 3px solid var(--secondColor);
+    outline: none;
+}
+
+#serviceSelector {
+    padding: 10px;
+}
+
+#serviceSelector:focus {
+    border: 3px solid var(--secondColor);
+    outline: none;
+}
+
+.peopleAmt {
+    padding: 10px;
+}
+
+.peopleAmt:focus {
+    border: 3px solid var(--secondColor);
+    outline: none;
+}
+
+#calculate {
+    display: block;
+    margin: 30px auto;
+    text-transform: uppercase;
+    color: var(--thirdColor);
+    background: var(--secondColor);
+    font-size: 2rem;
+    border-color: transparent;
+    border-radius: 2px;
+    padding: 10px 20px;
+    user-select: none;
+}
+
+#calculate:hover {
+    background: var(--mainColor);
+    border-bottom-color: #000;
+}
+
+#calculate:active {
+    position: relative;
+    top:1px;
+}
+
+@media(max-width: 600px){
+    .container{
+        height: 100%;
+        width: 95%;
+        background: var(--thirdColor);
+        border-radius: 5%;
+    }
+}
